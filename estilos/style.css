@@ -16,6 +16,10 @@
   --fundo-card: #ffffff;
 }
 
+#menu a:target-current {
+  background-color: var(--destaque-inverso);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -41,6 +45,10 @@ header {
   z-index: 1;
 }
 
+#menu {
+  scroll-target-group: auto;
+}
+
 #menu ul {
   list-style: none;
   display: flex;
@@ -60,6 +68,10 @@ nav#menu a {
 nav#menu a:hover {
   background-color: var(--destaque-inverso);
   color: var(--destaque)
+}
+
+nav#menu a:target-current {
+  background-color: var(--destaque-inverso);
 }
 
 main {
